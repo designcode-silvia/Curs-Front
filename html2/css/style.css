@@ -7,3 +7,8 @@ body
 {
     background-color: rgb(101, 109, 94);
 }
+
+table,th,td 
+{
+    border: 1px solid black;
+}
