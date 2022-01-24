@@ -7,6 +7,88 @@
     <title>Document</title>
 </head>
 <body>
-    <p>contacta</p>
+    
+    <form>
+        <h1>Dades bàsiques</h1>
+        <br>
+        <label for="Nom">Nom</label><br>
+        <input type="text" id="fname" name="fname" required><br><br>
+        <label for="lname">Primer Cognom</label><br>
+        <input type="text" id="lname" name="lname" required>
+        <label for="lname">Segon Cognom</label>
+        <input type="text" id="lname" name="lname"><br><br>
+
+        <label for="document">Tipus de document</label>
+        <select name="document" id="document">
+            <option value="dni">DNI</option>
+            <option value="nie">NIE</option>
+        </select><br><br>
+
+        <label for="Document">Document d'identitat</label>
+        <input type="text" id="document" name="document"><br><br>
+
+        <label for="Ets">Ets</label><br>
+        <input type="radio" id="home" name="sexe" value="home">
+        <label for="home">Home</label><br>
+        <input type="radio" id="dona" name="sexe" value="dona">
+        <label for="dona">Dona</label><br><br>
+
+        <label for="Data">Data de naixement</label>
+        <input type="date"><br><br>
+
+        <h1>Dades de Contacte</h1>
+        <label for="Adreça">Adreça de correu</label><br>
+        <input type="email"><br><br>
+
+        <label for="phone">Telèfon</label><br>
+        <input type="tel" name="phone" id="tel" size="9" maxlength="9" pattern="[0-9]{9}"><br><br>
+
+        <label for="localidad">Vius a Barcelona?</label><br>
+        <input type="radio" id="si" name="localidad">
+        <label for="Si">Si</label>
+        <input type="radio" id="no" name="localidad">
+        <label for="No">No</label><br><br>
+        
+        <label for="via">Tipus de via</label><br>
+        <select name="via" id="via">
+            <option value="Carrer">Carrer</option>
+            <option value="Avinguda">Avinguda</option>
+            <option value="Camí">Camí</option>
+            <option value="Plaça">Plaça</option>
+        </select><br><br>
+
+        <label for="Adreça">Adreça</label><br>
+        <input type="text" id="adress" name="adress" required><br><br>
+        <label for="number">Número</label><br>
+        <input type="number" id="number" name="number" required><br><br>
+        <label for="pis">Pis</label><br>
+        <input type="text"><br><br>
+        <label for="number">Porta</label><br>
+        <input type="number" id="number" name="number" required><br><br>
+        <label for="number">Escala</label><br>
+        <input type="number" id="number" name="number" required><br><br>
+
+        <label for="cp">Codi postal</label><br>
+        <input type="number" id="cp" name="cp" placeholder="08030"><br><br>
+
+        <label for="poblacion">Població</label><br>
+        <input type="text" name="poblacion" id="poblacion"><br><br>
+
+        <h1>Lista de Tecnologias</h1>
+        <input type="checkbox" id="tec1" name="tec1" value="html">
+        <label for="html"> HTML</label><br>
+        <input type="checkbox" id="tec2" name="tec2" value="css">
+        <label for="css"> CSS</label><br>
+        <input type="checkbox" name="tec3" id="tec3" value="js">
+        <label for="js">JS</label><br><br>
+
+        <h4>Explica porque te gustan</h4>
+        <textarea name="text" id="text" cols="30" rows="10"></textarea><br><br>
+
+        <input type="submit" value="submit">
+        
+
+
+    </form>
 </body>
 </html>
