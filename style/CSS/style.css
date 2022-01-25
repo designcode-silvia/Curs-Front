@@ -1,0 +1,57 @@
+.city
+{
+    background-color: #FC9D62;
+    border: 2px solid black;
+    margin: 20px;
+    padding: 20px;
+}
+
+p.center
+{
+    text-align: end;
+    color: white;
+}
+
+body
+{
+    background-color: tomato;
+}
+
+#p1 
+{
+    text-align: center;
+}
+
+#p2
+{
+    text-align:center;
+}
+
+#p3 
+{
+    text-align: justify;
+}
+
+div.city a
+{
+    text-decoration: none;
+    color: black;
+}
+
+h1.center
+{
+    margin-top: 50px;
+    padding: 50px;
+}
+
+#london,#paris,#tokyo
+{
+    margin: 20px;
+    width: 80%;
+}
+
+div.text
+{
+    background-image: url(../IMG/world.jpg);
+    padding: 25px;
+}

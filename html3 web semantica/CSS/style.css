@@ -1,0 +1,14 @@
+header,nav,section,aside,footer
+{
+    border: 1px solid black;
+}
+
+img
+{
+    width: 50%;
+}
+
+body
+{
+    background-color: #C9ADEA;
+}
