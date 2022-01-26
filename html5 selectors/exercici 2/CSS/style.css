@@ -1,0 +1,22 @@
+a
+{
+    display:list-item;
+    margin: 20px;
+    list-style-type: none;
+    padding: 5px;
+}
+
+.enlaces
+{
+    color: red;
+}
+
+#especial
+{
+    background: red;
+    color: white;
+    text-decoration: none;
+    
+}
+
+

@@ -1,25 +1,32 @@
 div
 {
     background: violet;
+    text-align: center;
 }
 
 .circulo
 {
-    width: 200px;
-    height: 200px;
+    width: 150px;
+    height: 150px;
     display: inline-block;
-    margin: 10px;
+    margin: 20px;
     border-radius: 50%;
     background: white;
     border: 8px solid black;
 }
 
-.white
+#shadow
 {
-
+    box-shadow: 10px 16px 18px rgba(0,0,0, 0.6);
 }
 
-.red
+#red
 {
     background: red;
+}
+
+#yellow
+{
+    background: rgb(255, 247, 134);
+    border-color: chocolate;
 }
