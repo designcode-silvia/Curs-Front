@@ -3,4 +3,7 @@ div
     margin: 50px;
     padding: 20px;
     border: 20px solid red;
+    background: white;
+    color: black;
+    text-align: center;
 }

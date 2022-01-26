@@ -1,9 +1,25 @@
-div.red
+div
 {
-    border: black;
-    display: inline-block;
-    height: 30px;
-    width: 30px;
-    border-radius: 50%;    
+    background: violet;
 }
 
+.circulo
+{
+    width: 200px;
+    height: 200px;
+    display: inline-block;
+    margin: 10px;
+    border-radius: 50%;
+    background: white;
+    border: 8px solid black;
+}
+
+.white
+{
+
+}
+
+.red
+{
+    background: red;
+}
