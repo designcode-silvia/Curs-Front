@@ -1,22 +1,22 @@
 a
 {
-    display:list-item;
-    margin: 20px;
-    list-style-type: none;
-    padding: 5px;
-}
-
-.enlaces
-{
+    margin: 1em 0;
+    float: left;
+    padding: 2px;
     color: red;
+    clear: left;
 }
 
-#especial
+a:hover
 {
-    background: red;
-    color: white;
     text-decoration: none;
-    
+    background-color: red;
+    color: #FFF;
+}
+
+a:visited
+{
+    color: #CCC;
 }
 
 

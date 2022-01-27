@@ -22,14 +22,14 @@ a
 #primero em
 {
     background: #FFFFCC;
-    padding: 1em;
+    padding: 0.1em;
 }
 
 .especial 
 {
     background: #FFCC99; 
     border: 1px solid #FF9900; 
-    padding: .1em;
+    padding: 0.1em;
 }
 
 .normal span

@@ -1,4 +1,37 @@
-p
+#verde-subrayado
+{
+    color: green;
+    text-decoration: underline;
+}
+
+#rojo
 {
     color: red;
+    font-weight: bold;
+}
+
+#subrayado-doble
+{
+    text-decoration: underline overline;
+}
+
+#strong
+{
+    font-weight: bold;
+    font-size: 30pt;
+}
+
+#azul
+{
+    color: blue;
+    font-size: large;
+    font-weight: bold;
+}
+
+#subrayado-rojo
+{
+    color: red;
+    text-decoration: underline;
+    font-size: large;
+    font-weight: bold;
 }
