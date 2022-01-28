@@ -1,0 +1,35 @@
+#portada
+{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 90vh;
+    width: 100%;
+    border: 1px solid black;
+    position: relative;
+    display: grid;
+    place-content: center;
+    color: rgb(255, 136, 0);
+    font-weight: bold;
+}
+
+p
+{
+    width: 50%;
+    margin: 0 auto;
+}
+
+#portada::before
+{
+    content:"";
+    background-image: url(../IMG/img.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 90vh;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0.5;
+    filter: blur(5px);
+    z-index: -5;
+}
