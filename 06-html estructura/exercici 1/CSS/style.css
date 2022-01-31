@@ -1,0 +1,50 @@
+.mateix-ample
+{
+    border: 2px solid black;
+    display: inline-block;
+    margin: 5px;
+    width: 300px;
+    padding: 10px;
+}
+
+#principal,#lateral
+{
+    display: inline-block;
+    width: 300px;
+    border: 2px solid black;
+    margin: 5px;
+    padding: 10px;
+}
+
+#lateral
+{
+    width: 200px;
+}
+
+#menu
+{
+    float:left;
+    width: 450px;
+    border: 2px solid black;
+    margin: 5px;
+    padding: 10px;
+}
+
+#contenido-alineado
+{
+    float: right;
+    width: 200px;
+    margin: 5px;
+    padding: 10px;
+    background-color: rgb(187, 187, 187);
+}
+
+.flex
+{
+    border: 1px solid black;
+    clear: both;
+    flex: unset;
+}
+
+
+

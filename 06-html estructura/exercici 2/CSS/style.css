@@ -1,0 +1,47 @@
+header
+{
+    background-color: rgb(255, 208, 0);
+    width: 100%;
+    padding: 90px;
+    text-align: center;
+    font-size: 3em;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+#azul
+{
+    background-color: rgb(61, 107, 255);
+    float: left;
+    width: 20%;
+    height: 100px;
+}
+
+#verde
+{
+    background-color: rgb(0, 184, 0);
+    width: 60%;
+    height: 100px;
+    float: left;
+    
+}
+
+#rojo
+{
+    background-color: rgb(255, 0, 0);
+    width: 20%;
+    height: 100px;
+    float: right;
+    
+    
+}
+
+footer
+{
+    background-color: rgb(201, 95, 95);
+    text-align: center;
+    padding: 30px;
+    width: 100%;
+    clear: both;
+}
+

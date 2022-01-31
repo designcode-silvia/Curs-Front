@@ -1,0 +1,21 @@
+body,ul
+{
+    margin: 30px;
+    padding-left: 0;
+}
+
+.caixa
+{
+    display: inline;
+    width: 150px;
+    padding: 10px;
+    border: 5px solid gray;
+    margin: 10px;
+    /* tota la caixa suma 160 */
+    /* 120 del contingut + padding (10 esquerre, 10 dreta) + border (10 esquerre, 10 dreta) */
+}
+
+li
+{
+    display: inline;
+}
