@@ -2,46 +2,60 @@ header
 {
     background-color: rgb(255, 208, 0);
     width: 100%;
-    padding: 90px;
     text-align: center;
     font-size: 3em;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
+    padding-top: 80px;
+    padding-bottom: 80px;
 }
 
 #azul
 {
     background-color: rgb(61, 107, 255);
     float: left;
+    height: 160px;
     width: 20%;
-    height: 100px;
 }
 
 #verde
 {
     background-color: rgb(0, 184, 0);
-    width: 60%;
-    height: 100px;
+    height: 160px;
     float: left;
+    width: 60%;
     
 }
 
 #rojo
 {
     background-color: rgb(255, 0, 0);
-    width: 20%;
-    height: 100px;
+    height: 160px;
     float: right;
-    
-    
+    width: 20%; 
 }
 
 footer
 {
     background-color: rgb(201, 95, 95);
     text-align: center;
-    padding: 30px;
     width: 100%;
     clear: both;
+    padding-bottom: 40px;
+    padding-top: 40px;
 }
 
+@media screen and (max-width: 800px) {
+    .menu {
+    width: 100%;
+ }
+    header{
+        font-size: 1em;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .menu{
+        font-size: 0.5em;
+    }
+}

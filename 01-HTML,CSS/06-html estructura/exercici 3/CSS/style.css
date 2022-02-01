@@ -1,0 +1,27 @@
+.caja1
+{
+    border: 2px solid black;
+    width: 100%;
+
+}
+
+p
+{
+    display: inline block;
+}
+
+.caja2
+{
+    border: 2px solid black;
+    width: 50%;
+    text-align: right; 
+    margin-left: 25%;
+    margin-right: 25%;
+}
+
+.caja3
+{
+    border: 2px solid greenyellow;
+    width: 30%;
+    float: right;
+}

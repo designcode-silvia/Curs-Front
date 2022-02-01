@@ -1,0 +1,30 @@
+.caixes
+{
+    border: 2px solid black;
+    width: 100px;
+    height: 120px;
+    display: inline;
+}
+
+.bloques
+{
+    border: 2px solid black;
+    width: 50px;
+    height: 50px;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.inline
+{
+    border: 2px solid black;
+    width: 32px;
+    height: 48px;
+    display: inline-block;
+
+}
+
+header, nav, footer
+{
+    padding: 5px;
+}
