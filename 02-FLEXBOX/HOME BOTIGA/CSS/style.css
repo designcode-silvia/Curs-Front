@@ -1,0 +1,103 @@
+/* https://colorhunt.co/palette/fbf8f1f7ecdee9dac154bab9 */
+
+*
+{
+    margin: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.container{
+    max-width: 1200px;
+    min-width: 400px;
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.header
+{
+    background-color: #FBF8F1;
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.menu{
+    background-color: #F7ECDE;
+    display: flex;
+    flex-flow: row nowrap;
+    height: 100px;
+    align-items: center;
+}
+
+.logo{
+    background-color: #E9DAC1;
+    flex-grow: 1;
+    height: 50px;
+}
+
+.nav{
+    background-color: #E9DAC1;
+    flex-grow: 2;
+    height: 50px;
+}
+
+.iconos{
+    background-color: #E9DAC1;
+    flex-grow: 1;
+    height: 50px;
+}
+
+.texto-principal{
+    background-color: #E9DAC1;
+}
+
+h1{
+    background-color: white;
+}
+
+.section{
+    background-color: #FBF8F1;
+    display: flex;
+}
+
+.articulos{
+    background-color: #E9DAC1;
+    flex-grow: 2;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.article{
+    background-color: white;
+    flex-grow: 1;
+    width: 40%;
+}
+
+.navegacion{
+    background-color: black;
+    width: 100%;
+}
+
+.aside{
+    background-color: #E9DAC1;
+    flex-grow: 1;
+}
+
+.publicidad{
+    background-color: white;
+}
+
+.footer{
+    background-color: #FBF8F1;
+}
+
+.pie{
+    background-color: #E9DAC1;
+}
+
+@media all and (max-width: 800px){
+    .section{
+        
+    }
+}
+

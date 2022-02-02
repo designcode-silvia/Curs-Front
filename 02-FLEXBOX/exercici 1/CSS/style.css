@@ -9,11 +9,9 @@ body
     background-color: rgb(255, 196, 0);
     margin: 1em;
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: flex-start;
-    
+    flex-wrap: nowrap;
+    justify-content: center; 
+    height: 500px;  
 }
 
 .item
@@ -25,4 +23,11 @@ body
     font-weight: bold;
     margin: 0.5em;
     background-color: chartreuse;
+    width: 2em auto;
+    height: 100px;
+}
+
+.item1
+{
+    align-self: flex-end;
 }
