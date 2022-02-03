@@ -16,7 +16,7 @@
 
 .header
 {
-    background-color: #FBF8F1;
+    background-color: #E9DAC1;
     display: flex;
     flex-flow: column nowrap;
 }
@@ -30,52 +30,121 @@
 }
 
 .logo{
-    background-color: #E9DAC1;
     flex-grow: 1;
     height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo img{
+    width: 150px;
+    height: 150px;
 }
 
 .nav{
-    background-color: #E9DAC1;
+    display: flex;
     flex-grow: 2;
     height: 50px;
+    align-items: center;  
+}
+
+a{
+    color: black;
+    text-decoration: none;
+    font-family: "Roboto";
+    font-size: 1.2em;
+}
+
+a:hover{
+    color: black;
+    background-color: #E9DAC1;
+    border-top-left-radius: 50%;
+    border-bottom-right-radius: 50%;
 }
 
 .iconos{
-    background-color: #E9DAC1;
+    display: flex;
     flex-grow: 1;
     height: 50px;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Banner */
+.texto-principal img{
+    width: 100%;
+    display: flex;
+    justify-content: center;
 }
 
 .texto-principal{
-    background-color: #E9DAC1;
+    background-color: #F7ECDE;
 }
 
+/* Texto tienda online i principal */
 h1{
-    background-color: white;
+    font-family: "Roboto";
+    display: flex;
+    justify-content: center;
 }
 
+.texto-principal p{
+    font-family: "Roboto";
+    display: flex;
+    justify-content: center;
+}
+
+/* Productos */
 .section{
-    background-color: #FBF8F1;
+    background-color: #E9DAC1;
     display: flex;
 }
 
 .articulos{
-    background-color: #E9DAC1;
-    flex-grow: 2;
+    background-color: #F7ECDE;
     display: flex;
     flex-flow: row wrap;
+    flex-grow: 2;
+    justify-content: center;
+    border: 1px solid black;
 }
 
 .article{
-    background-color: white;
-    flex-grow: 1;
+    display: flex;
+    flex-flow: row wrap;
     width: 40%;
+    border: 1px solid black;
 }
 
-.navegacion{
-    background-color: black;
-    width: 100%;
+.article img{
+    width: 350px;
+    height: 350px;
+}
+
+span{
+    font-weight: bold;
+    padding: 0;
+    margin: 0;
+}
+
+.articulos p{
+    font-family: "Roboto";
+    font-size: 1.5em;
+}
+
+.article div{
+    margin-left: 0;
+    font-size: 2em;
+    font-family: "Roboto";
+    font-size: 2em;
+    padding-left: 20px;
+}
+
+input{
+    font-size: 1.5em;
+    background-color: #E9DAC1;
+    border-radius: 8%;
 }
 
 .aside{
