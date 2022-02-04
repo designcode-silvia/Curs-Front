@@ -12,6 +12,7 @@
     min-width: 400px;
     display: flex;
     flex-flow: column nowrap;
+    margin: 0 auto;
 }
 
 .header
@@ -74,12 +75,13 @@ a:hover{
 /* Banner */
 .texto-principal img{
     width: 100%;
-    display: flex;
-    justify-content: center;
 }
 
 .texto-principal{
     background-color: #F7ECDE;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
 }
 
 /* Texto tienda online i principal */
@@ -101,67 +103,98 @@ h1{
     display: flex;
 }
 
+
 .articulos{
     background-color: #F7ECDE;
     display: flex;
     flex-flow: row wrap;
     flex-grow: 2;
     justify-content: center;
-    border: 1px solid black;
 }
 
+/* Cada uno de los articulos con todos elementos*/
 .article{
     display: flex;
     flex-flow: row wrap;
     width: 40%;
-    border: 1px solid black;
 }
 
+/* Imagenes */
 .article img{
-    width: 350px;
-    height: 350px;
+    width: 100%;
+    margin: 10px auto;
 }
 
+#product1{
+    height: 365px;
+}
+
+/* Texto negrita */
 span{
     font-weight: bold;
     padding: 0;
     margin: 0;
 }
 
+/* Texto productos */
 .articulos p{
     font-family: "Roboto";
     font-size: 1.5em;
 }
 
-.article div{
+/* precios */
+.precio{
     margin-left: 0;
     font-size: 2em;
     font-family: "Roboto";
-    font-size: 2em;
     padding-left: 20px;
 }
 
+/* button */
 input{
     font-size: 1.5em;
     background-color: #E9DAC1;
-    border-radius: 8%;
+    border-radius: 5%;
+    width: 100%;
 }
 
+.button{
+    display: flex;
+    flex-grow: 2;
+    justify-content: center;
+    height: 80px;
+}
+
+/* aside */
 .aside{
     background-color: #E9DAC1;
     flex-grow: 1;
+    margin: 0 auto;
+    width: 25%;
 }
 
+/* caixa dins aside */
 .publicidad{
-    background-color: white;
+    background-color: #F7ECDE;
+    margin: 0 auto;
+    font-family: "Roboto";
+    font-size: 2em;
+    display: flex;
+    text-align: justify;
 }
 
 .footer{
-    background-color: #FBF8F1;
+    background-color: #E9DAC1;
 }
 
 .pie{
-    background-color: #E9DAC1;
+    background-color: #F7ECDE;
+    border: 1px solid black;
+    display: flex;
+}
+
+.social-media{   
+    display: flex;
 }
 
 @media all and (max-width: 800px){
