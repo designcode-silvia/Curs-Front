@@ -75,6 +75,11 @@ a:hover{
 /* Banner */
 .texto-principal img{
     width: 100%;
+    position: relative;
+}
+
+p .texto-banner{
+    position: absolute;
 }
 
 .texto-principal{
@@ -125,10 +130,6 @@ h1{
     margin: 10px auto;
 }
 
-#product1{
-    height: 365px;
-}
-
 /* Texto negrita */
 span{
     font-weight: bold;
@@ -145,7 +146,6 @@ span{
 /* precios */
 .precio{
     margin-left: 0;
-    font-size: 2em;
     font-family: "Roboto";
     padding-left: 20px;
 }
@@ -180,7 +180,7 @@ input{
     font-family: "Roboto";
     font-size: 2em;
     display: flex;
-    text-align: justify;
+    text-align: center;
 }
 
 .footer{
@@ -189,17 +189,68 @@ input{
 
 .pie{
     background-color: #F7ECDE;
-    border: 1px solid black;
+    display: flex;
+    flex-direction: row;
+}
+
+.pie div{
+    width: 25%; 
+}
+
+.social-media ul{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 0;
+    margin: 0;
+    justify-content: center;
+}
+.social-media ul li{
+    padding: 0;
+    margin: 0;
     display: flex;
 }
 
-.social-media{   
-    display: flex;
+.social-media ul li i{
+    background-color: #E9DAC1;
+    padding: 10px;
+    margin: 10px;
+}
+
+.pie div p{
+    font-size: 20px;
+    font-family: "Roboto";
+    font-weight: 200;
+    width: 100%;
+}
+
+ul li{
+    font-family: "Roboto";
+    font-weight: lighter;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    padding-bottom: 10px;
 }
 
 @media all and (max-width: 800px){
     .section{
-        
+        flex-direction: column;
+    }
+    .aside{
+        width: auto;
+    }
+    .menu{
+        flex-direction: column;
+        height: auto;
     }
 }
+
+@media all and (max-width: 600px){
+    .articulos{
+        flex-direction: column;
+    }
+    .article{
+        align-self: center;
+    } 
 
