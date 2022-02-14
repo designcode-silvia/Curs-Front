@@ -1,5 +1,8 @@
 // 1. Fes un programa on es forci el resultat NaN i es mostri per pantalla.
-
+let numeroUno = "text";
+let numeroDos = 3;
+let total = numeroUno * numeroDos;
+console.log(total);
 
 // 2. Fes un programa per convertir un String nombre a nombre.
 
