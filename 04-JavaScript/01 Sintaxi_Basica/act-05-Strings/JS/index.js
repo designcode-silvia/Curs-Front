@@ -18,7 +18,7 @@ console.log(nuevoProducto.trim());
 Donada la següent declaració: const producto = 'Monitor 20 Pulgadas'; 
 a. Reemplaça Pulgadas per ‘. Reemplaça 20 per 40.*/
 var producto1 = 'Monitor 20 Pulgadas';
-producto1 = producto1.replace(20,40).replace("Pulgadas", " ' ");
+producto1 = producto1.replace(20,40).replace("Pulgadas", "'");
 console.log(producto1);
 
 /* b. Extreu en una nova variable la següent part de la frase: 40'.*/
@@ -37,10 +37,13 @@ console.log(pulgadas1);
 
 /* d. Declara una variable i assignali el teu Nom. Mostra la primer lletra d’aquesta variable.*/
 var nom = 'Silvia';
-console.log(nom);
-var posicioNom = (nom.indexOf('S'))
-var lletra = nom.slice(posicioNom);
+console.log("nom" + nom);
+var posicioNom = (nom.indexOf('S'));
+var lletra = nom.slice(posicioNom, 1);
+// lletra = nom.substring(posicioNom,1);
+// lletra = nom.charAt(0); --->
 console.log(lletra);
+console.log(posicioNom);
 
 /* 3. Practicarem amb Split
 
