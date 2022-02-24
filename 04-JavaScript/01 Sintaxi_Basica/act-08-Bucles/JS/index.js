@@ -78,19 +78,65 @@ for (let j = 0; j < paraules.length; j++) {
 }
 
 
-/* 6. Recorre el següent objecte, mostrant per pantalla el nom del producte
-const carrito = [{
-id: 1,
-producto: 'Libro'
+/* 6. Recorre el següent objecte, mostrant per pantalla el nom del producte */
+
+/* const carrito = [{
+
+    id: 1,
+    producto: 'Libro'
 },
 {
-id: 2,
-producto: 'Camisa'
+    id: 2,
+    producto: 'Camisa'
 },
 {
-id: 3,
-producto: 'Disco'
+    id: 3,
+    producto: 'Disco'
+} 
+
+for (let index =0; index < carrito.length, index++){
+    console.log('1 agregaste' + carrito [index].producto );
 } */
 
 
 
+
+
+/* 7. Codifiqueu un programa amb un bucle for que permeti comptar el numero de vegades que surt una lletra en una frase */
+let frase = 'Hola aixo es una prova';
+let lletra = 'a';
+let contadorLletres = 0;
+
+/* for (let i=0; i <= frase.length ; i++){
+        if (lletra.charAt(i)==lletra) {
+            contadorLletres==contadorLletres+1;
+        }
+}  console.log(i + 'repetició lletra'); */
+
+
+
+
+
+/* 8. Fes un programa que mostri el següent per pantalla:
+*
+* *
+* * *
+* * * *
+* * * * *
+* * * * * *
+
+El nombre de línies formades per “*” vindrà donat per una variable.
+Condició: En tot el codi del programa només hi pot haver un * */
+
+
+
+
+
+
+
+/* 9. Defineix una variable, per asignar el no de paraules que volem demanar a un
+usuari.
+• S'han de demanar tants “prompts” com el no de paraules assignat.
+• Les paraules es guarden en una cadena, separades per <br>.
+• Un cop han sigut totes introduïdes, les mostren per pantalla amb un
+document.write */
