@@ -3,7 +3,7 @@ Benvinguda [nom] [Cognoms] si és dona.
 Benvingut [nom] [Cognoms] si és home.
 
 També, tingues en compte un escenari, per quan no passis a la funció el paràmetre sexe. */
-function saludar (nom, cognom, sexe){
+/* function saludar (nom, cognom, sexe){
     if (sexe == 'dona') {
         window.alert('Benvinguda' + nom + cognom)
     }else if (sexe =='home') {
@@ -15,14 +15,13 @@ function saludar (nom, cognom, sexe){
 
 saludar('Sonia','Lopez','dona');
 saludar('Juan','Lopez','home');
-saludar('','','');
+saludar('','',''); */
 
 /* 2. Crea una funció que es calculi l’edat d’un gos. Quin parametre podries fer servir?*/
-function edatGos(data) {
+/* function edatGos(data) {
     var avui = 2022;
     var edat = avui - data;
     
-
 console.log('El gos té' + edat + 'anys')
 
 if (edat < 5) {
@@ -36,24 +35,67 @@ var esJove = false;
 esJove = edatGos(1990);
 console.log(esJove)
 esJove = edatGos(2020);
-console.log(esJove)
+console.log(esJove) */
 
 
 // 3. Crea una funció on se li pasa 2 números. I que retorni el menor.
+function numeroMenor(a,b) {
+    
+    if (a < b) {
+        return a;
+      } else if (a == b) {
+        return 'son iguals';
+      } else {
+        return b;
+      }
+}
 
+var a=10;
+var b=5;
+var c;
+c= numeroMenor(a,b) 
+console.log(c)
+
+var a=20;
+var b=40;
+var c;
+c= numeroMenor(a,b) 
+console.log(c)
+
+var a=33;
+var b=33;
+var c;
+c= numeroMenor(a,b) 
+console.log(c)
 
 /* 4. Programa en JavaScript una funció on se li passi dos arguments: string1 -frase- i string2-frase-, i retorna quants caràcters hi ha en total = string1 + string2. */
+function caracters(palabra1,palabra2) {
+    
+    var sumaTotal = palabra1.length + palabra2.length;
+    return sumaTotal;
+}
+
+var palabra1 = 'aigua'
+var palabra2 = 'foc'
+var caractersTotal = caracters(palabra1,palabra2);
+console.log(caractersTotal);
+
+var palabra1 = 'hola'
+var palabra2 = 'bon dia'
+var caractersTotal = caracters(palabra1,palabra2)
+console.log(caractersTotal);
 
 
-/* 5. Analitza e investiga les diferencies entre les següents funcions. Aquesta és una pregunta d’entrevista com a JS Developer. (Hoisting)
-sumar();
+/* 5. Analitza e investiga les diferencies entre les següents funcions. Aquesta és una pregunta d’entrevista com a JS Developer. (Hoisting) */
+/* sumar();
 function sumar() {
 console.log(2 + 2);
-}
+} 
+
 sumar2();
 const sumar2 = function() {
 console.log(3 + 3);
-} */
+}  */
 
 /* 6. Donada una adreça de correu, implementa una funció que verifiqui si el email té carregat el caràcter @. */
 
