@@ -3,7 +3,7 @@ Benvinguda [nom] [Cognoms] si és dona.
 Benvingut [nom] [Cognoms] si és home.
 
 També, tingues en compte un escenari, per quan no passis a la funció el paràmetre sexe. */
-function saludar (nom, cognom, sexe){
+/* function saludar (nom, cognom, sexe){
     if (sexe == 'dona') {
         window.alert('Benvinguda' + nom + cognom)
     }else if (sexe =='home') {
@@ -15,10 +15,10 @@ function saludar (nom, cognom, sexe){
 
 saludar('Sonia','Lopez','dona');
 saludar('Juan','Lopez','home');
-saludar('','','');
+saludar('','',''); */
 
 /* 2. Crea una funció que es calculi l’edat d’un gos. Quin parametre podries fer servir?*/
-function edatGos(data) {
+/* function edatGos(data) {
     var avui = 2022;
     var edat = avui - data;
     
@@ -36,37 +36,98 @@ var esJove = false;
 esJove = edatGos(1990);
 console.log(esJove)
 esJove = edatGos(2020);
-console.log(esJove)
+console.log(esJove); */
 
 
 // 3. Crea una funció on se li pasa 2 números. I que retorni el menor.
 
 
+
 /* 4. Programa en JavaScript una funció on se li passi dos arguments: string1 -frase- i string2-frase-, i retorna quants caràcters hi ha en total = string1 + string2. */
 
 
-/* 5. Analitza e investiga les diferencies entre les següents funcions. Aquesta és una pregunta d’entrevista com a JS Developer. (Hoisting)
+
+/* 5. Analitza e investiga les diferencies entre les següents funcions. Aquesta és una pregunta d’entrevista com a JS Developer. (Hoisting) */
 sumar();
 function sumar() {
 console.log(2 + 2);
 }
-sumar2();
+
+/* sumar2();
 const sumar2 = function() {
 console.log(3 + 3);
-} */
+}  */
+
+//el segon cas no funciona perque fa servir el return directament amb la crida, a dins de la funcio es com si estiguesim fent un return de la suma, el motor de js no ho interpreta com una funció ho reconeix com una variable.
 
 /* 6. Donada una adreça de correu, implementa una funció que verifiqui si el email té carregat el caràcter @. */
+function find_email(string1){
+    if (string1.search('@') >0) {
+        return true;
+    } else {
+        return false;
+    }
+}
+
+var email = "hola@prova1.com";
+console.log(find_email(email));
+
+var email = "holaprova1.com";
+console.log(find_email(email)); 
 
 
 // 7. Defineix una frase e implementar les funcions següents:
+var frase;
 // a. Funció per Imprimir la primera meitat dels caràcters de la cadena.
-// b. Funció per Imprimir el darrer caràcter.
-// c. Funció per Imprimir-ho en forma inversa.
-// d. Funció per Imprimir cada caràcter del String separat amb un guió.
-/* e. Funció per Imprimir la quantitat de vocals sense accents emmagatzemades. */
+function meitat(frase){
+    var posicioBuscada = Math.floor(frase.length/2);
+    var primeraMeitat = frase.slice(0,posicioBuscada);
+    console.log(primeraMeitat);
+}
 
+var frase = "Hola això es una prova";
+meitat(frase); 
+
+// b. Funció per Imprimir el darrer caràcter.
+function darrer(frase){
+    var posicioFinal = Math.floor(frase.length/2);
+    var darrerCaracter = frase.slice(posicioFinal);
+    console.log(darrerCaracter);
+}
+
+var frase = "Hola això es una prova";
+darrer(frase); 
+
+// c. Funció per Imprimir-ho en forma inversa.
+function inversa(frase){
+    var fraseInversa = frase.split("").reverse().join("");
+    console.log(fraseInversa);
+}
+
+var frase = "Hola això es una prova";
+inversa(frase); 
+
+// d. Funció per Imprimir cada caràcter del String separat amb un guió.
+function separat_per_guio(fraseADividir){
+    var dividir = fraseADividir.split(" ").join("-");
+    console.log(dividir);
+}
+
+var frase = "Hola això es una prova";
+separat_per_guio(frase); 
+
+/* e. Funció per Imprimir la quantitat de vocals sense accents emmagatzemades. */
+function cantitat_de_vocals(cadena) {
+    var numeroVocales = cadena.match(/[aeioòu]/gi).length;
+    console.log(numeroVocales);
+}
+
+var frase = "Hola això es una prova";
+cantitat_de_vocals(frase); 
 
 /* 8. Fes una funció que donat un número de DNI, calculi si la lletra és correcta. Tingues present que la lletra del DNI es calcula en dos passos: */
+
+
 
 //a. Calcular el mòdul del número del DNI respecte 23
 /* b. El resultat de l’operació anterior ha de correspondre a la posició del següent string:
