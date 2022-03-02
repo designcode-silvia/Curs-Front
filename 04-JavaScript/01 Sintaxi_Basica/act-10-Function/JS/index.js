@@ -111,6 +111,7 @@ inversa(frase);
 function separat_per_guio(fraseADividir){
     var dividir = fraseADividir.split(" ").join("-");
     console.log(dividir);
+    return dividir;
 }
 
 var frase = "Hola això es una prova";
@@ -125,16 +126,23 @@ function cantitat_de_vocals(cadena) {
 var frase = "Hola això es una prova";
 cantitat_de_vocals(frase); 
 
-/* 8. Fes una funció que donat un número de DNI, calculi si la lletra és correcta. Tingues present que la lletra del DNI es calcula en dos passos: */
-
-
-
-//a. Calcular el mòdul del número del DNI respecte 23
-/* b. El resultat de l’operació anterior ha de correspondre a la posició del següent string:
+/* 8. Fes una funció que donat un número de DNI, calculi si la lletra és correcta. Tingues present que la lletra del DNI es calcula en dos passos: 
+a. Calcular el mòdul del número del DNI respecte 23
+b. El resultat de l’operació anterior ha de correspondre a la posició del següent string:
 
 var lletres =”TRWAGMYFPDXBNJZSQVHLCKE”; */
+function check_dni(dni) {
+    var dniSeparado = dni.split("-");
+    var resto = dniSeparado[0] % 23;
+    var lletres = "TRWAGMYFPDXBNJZSQVHLCKE".split("");
+    console.log(dniSeparado);
+    console.log(resto);
+    console.log(lletres);
+    console.log(lletres[resto] == dniSeparado[1]);
+}
 
-
+var miDni = '48219976-Q';
+check_dni(miDni);
 
 /* 9. Fes un programa amb les seves funcions que determini si un password és segur. Per exemple, un password segur ha de complir les següents condicions:
 ● Ha de contenir almenys 8 números.
