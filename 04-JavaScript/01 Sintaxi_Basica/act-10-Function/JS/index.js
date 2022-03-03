@@ -15,10 +15,10 @@ També, tingues en compte un escenari, per quan no passis a la funció el paràm
 
 saludar('Sonia','Lopez','dona');
 saludar('Juan','Lopez','home');
-saludar('','',''); */
+saludar('','','');  */
 
 /* 2. Crea una funció que es calculi l’edat d’un gos. Quin parametre podries fer servir?*/
-/* function edatGos(data) {
+function edatGos(data) {
     var avui = 2022;
     var edat = avui - data;
     
@@ -36,7 +36,7 @@ esJove = edatGos(1990);
 console.log(esJove)
 esJove = edatGos(2020);
 
-console.log(esJove); */
+console.log(esJove); 
 
 
 // 3. Crea una funció on se li pasa 2 números. I que retorni el menor.
@@ -161,7 +161,7 @@ separat_per_guio(frase);
 
 /* e. Funció per Imprimir la quantitat de vocals sense accents emmagatzemades. */
 function cantitat_de_vocals(cadena) {
-    var numeroVocales = cadena.match(/[aeioòu]/gi).length;
+    var numeroVocales = cadena.match(/[aeiou]/gi).length;
     console.log(numeroVocales);
 }
 
@@ -186,18 +186,32 @@ function check_dni(dni) {
 var miDni = '48219976-Q';
 check_dni(miDni);
 
+var miDni = '87654321-X';
+check_dni(miDni); 
+
 /* 9. Fes un programa amb les seves funcions que determini si un password és segur. Per exemple, un password segur ha de complir les següents condicions:
-● Ha de contenir almenys 8 números.
+● Ha de contenir almenys 8 carácters.
 ● Ha de contenir almenys una majúscula.
 ● Ha de contenir almenys una minúscula.
 ● Ha de contenir un número.
 ● Almenys ha de contenir un caràcter especial.
+
 Pots fer servir una funció per cada comprovació. */
+/* function validar_password(password) {
+    var caracters = password.lenght;
+    console.log(caracters);
+}
 
-
+var miPassword = 'miContraseña8';
+validar_password(miPassword); */
 
 /* 10. Simula un Captcha senzill de 5 caràcters ( amb lletres minúscules i números ) amb JAVASCRIPT. El captcha el pots generar fent ús random i de la següent variable:
 
 var captchaChars = "1234567890abcdefghijklmnopqrst";
 // Random captchaChars.length
 Pots implementar una funció que generi el captcha i un altre que el validi. */
+/* function genera_captcha() {
+    var captcha = "";
+    var captchaChars = "1234567890abcdefghijklmnopqrst";
+    var numRandom = Math.random(captcha);
+} */
