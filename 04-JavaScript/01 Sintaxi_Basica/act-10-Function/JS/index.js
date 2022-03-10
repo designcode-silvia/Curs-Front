@@ -197,21 +197,74 @@ check_dni(miDni);
 ● Almenys ha de contenir un caràcter especial.
 
 Pots fer servir una funció per cada comprovació. */
-/* function validar_password(password) {
-    var caracters = password.lenght;
-    console.log(caracters);
+function validar_password(password) {
+    var caracters = password.length;
+    var mayus = 0;
+    var minus = 0;
+    var num = 0;
+    var especial = 0;
+    
+    if (password.match(/[A-Z]+/)) {
+        mayus++;
+    }
+    if (password.match(/[a-z]+/)) {
+        minus++;
+    }
+    if (password.match(/[0-9]+/)) {
+        num++;
+    }
+    if (password.match(/[$@#&!?]+/)) {
+        especial++;
+    }
+
+    if (caracters<8) {
+        console.log('La contrasenya ha de contenir almenys 8 carácters');
+    } else if (mayus === 0) {
+        console.log('Ha de contenir almenys una majúscula')
+    } else if (minus === 0) {
+        console.log('Ha de contenir almenys una minúscula')
+    } else if (num === 0) {
+        console.log('Ha de contenir un número')
+    } else if (especial === 0) {
+        console.log('Almenys ha de contenir un caràcter especial')
+    } else {
+        console.log('CORRECTE!')
+    }
 }
 
-var miPassword = 'miContraseña8';
-validar_password(miPassword); */
+var miPassword = 'miContraseña8?';
+validar_password(miPassword); 
 
-/* 10. Simula un Captcha senzill de 5 caràcters ( amb lletres minúscules i números ) amb JAVASCRIPT. El captcha el pots generar fent ús random i de la següent variable:
+/* 10. Simula un Captcha senzill de 5 caràcters ( amb lletres minúscules i números ) amb JAVASCRIPT. El captcha el pots generar fent ús random i de la següent variable: */
 
-var captchaChars = "1234567890abcdefghijklmnopqrst";
+// var captchaChars = "1234567890abcdefghijklmnopqrst";
 // Random captchaChars.length
-Pots implementar una funció que generi el captcha i un altre que el validi. */
-/* function genera_captcha() {
+
+/* Pots implementar una funció que generi el captcha i un altre que el validi. */
+function genera_captcha() {
     var captcha = "";
     var captchaChars = "1234567890abcdefghijklmnopqrst";
-    var numRandom = Math.random(captcha);
-} */
+    
+    
+    for (i = 0; i < 5; i++) {
+        var numRandom = Math.floor (Math.random(captcha) * captchaChars.length);
+        var chatRandom = captchaChars.charAt(numRandom);
+        captcha += chatRandom;
+    }
+    console.log(captcha);
+}
+
+genera_captcha();
+
+
+function validar_captcha(newCaptcha) {
+    if (newCaptcha==captcha) {
+        alert('Es Correcto')
+    } else {
+        alert('No es correcto')
+    }
+}
+
+var miCaptcha = captcha.length;
+validar_captcha(miCaptcha); 
+
