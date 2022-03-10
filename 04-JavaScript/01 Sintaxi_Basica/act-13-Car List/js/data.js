@@ -56,8 +56,6 @@ var products = [
     }
 ]
 
-var cart=[];
-
 // Array de la llista de la compra
 var cartList = [];
 
@@ -75,4 +73,3 @@ var subtotal = {
         discount: 0
     },
 };
-
