@@ -56,6 +56,8 @@ var products = [
     }
 ]
 
+var cart = [];
+
 // Array de la llista de la compra
 var cartList = [];
 

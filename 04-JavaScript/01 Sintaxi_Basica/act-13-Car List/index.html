@@ -18,6 +18,8 @@
     <script src="js/index.js"></script>
 
     <script>
+    
+    console.table(products);
         // Exercici 1: Afegim productes a la llista
         console.log("Afegim productes a la CarList");
         buy(1);
@@ -30,7 +32,14 @@
         buy(8);
         buy(1);
 
-        cleanCart();
+        console.table(cartList);
+
+        // Eliminem els productes del carrito
+        /* cleanCart(); */
+        
+        console.log("Aqui veiem el subtotal")
+        calculSubtotal()
+        console.table(subtotal);
     </script>
 </body>
 </html>
