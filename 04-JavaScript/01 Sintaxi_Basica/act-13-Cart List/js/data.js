@@ -53,6 +53,12 @@ var products = [
         name: 'Toddler Frock',
         price: 9.99,
         type: 'clothes'
+    },
+    {
+        id: 10,
+        name: 'Gadget cuina',
+        price: 49.99,
+        type: 'gadget'
     }
 ]
 
@@ -71,6 +77,10 @@ var subtotal = {
         discount: 0
     },
     clothes: {
+        value: 0,
+        discount: 0
+    },
+    gadget: {
         value: 0,
         discount: 0
     },

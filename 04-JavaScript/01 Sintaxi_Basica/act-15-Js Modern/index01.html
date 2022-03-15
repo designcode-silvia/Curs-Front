@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- DADES -->
+    <script src="./js/data.js"></script>
+    <!-- CODI jAVASCRIPT -->
+    <script src="./js/films.js"></script>
+
+    <script>
+        // Exercici 1: Has de mostrar per pantalla a l'usuari/ària només els directors de les pel·lícules.
+        // Per obtenir l'array de directors/es, has de crear la funció getAllDirectors().
+        console.log("exercici 1 - Mostrar directors de les pel·lícules");
+        getAllDirectors(movies);
+
+        // Exercici 2: Mostrar les pelicules de cert director
+        console.log("exercici 2 - Mostrar les pel·lícules de cert director");
+        getPelisFromDirector('Steven Spielberg');
+        
+        // Exercise 3: Calculem la mitjana de les puntuacions de les seves pel·lícules.
+        console.log("exercici 3");
+        pelisAverage(getPelisFromDirector('Steven Spielberg')); 
+
+        // Exercici 4: Ordenar les pel·lícules per alfabèticament per títol
+        console.log("exercici 4");
+        orderAlphabetically(movies);
+        
+        // Exercici 5: Ordernar per any ascendent
+        console.log("exercici 5");
+        orderByYear(movies)
+        
+        // Exercici 6: Visualitza la millor pel·lícula d'aquest any
+        console.log("exercici 6");
+        bestFilmOfYear(movies, 1993);
+        console.log(bestFilmOfYear("movies"));
+        bestFilmOfYear(movies, 2000);
+        console.log("============================================");
+        for (let index = 1921; index < 2022; index++) {
+            bestFilmOfYear(movies, index);
+        }
+
+        ordr_by_score(movies);
+        
+    </script>
+</body>
+
+</html>
