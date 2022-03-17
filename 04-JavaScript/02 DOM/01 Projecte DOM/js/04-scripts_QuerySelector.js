@@ -18,7 +18,7 @@ console.log(element4);
 
 console.log('segona card de hospedaje')
 //querySelectorAll --> se li té que posar all, encara que només volguém accedir a aquell element en particular.
-element4 = document.querySelectorAll('.hospedaje .card')[2];
+element4 = document.querySelectorAll('.hospedaje .card')[1];
 console.log(element4);
 
 console.log('formulari per id')
