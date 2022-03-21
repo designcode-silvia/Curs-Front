@@ -1,30 +1,25 @@
-/* Exercici 4: QuerySelector
-Mostra per consola:
-• La primera .card
-• L’element de la classe info del contenidor premium
-• La segona card de hospedaje
-• El formulari per id
-• El primer menú de navegació <nav> */
+/* Exercici 4, Event al formulari: input
+    <form action="/buscador" method="POST" class="formulario " id="formulario" >
+    <input type="text" name="busqueda" class="busqueda" placeholder=" ">
+    <input type="submit" value="Buscar" id="btn-submit">
+    </form>
+Si li donem a Buscar intentará enviar el Formulari al servidor.
+Però hem d'evitar enviar-ho si no està validat, per això fem servir preventDefault. Fes que al clickar buscar, no envii el formulari */
+var formulari = document.querySelector('#btn-submit');
+console.log(formulari);
 
-let element4
+// en aquest cas només estem desavilitant el botó
+formulari.addEventListener('click', validacio);
 
-console.log('primera card')
-element4 = document.querySelector('.card');
-console.log(element4);
+function validacio(e) {
+    e.preventDefault();
+}
 
-console.log('element de la classe info del contenidor premium')
-element4 = document.querySelector('.premium .info');
-console.log(element4);
+// capturar el event amb el submit i deshabilitar la validació del formulari
+/* var formulari = document.querySelector('#formulario');
 
-console.log('segona card de hospedaje')
-//querySelectorAll --> se li té que posar all, encara que només volguém accedir a aquell element en particular.
-element4 = document.querySelectorAll('.hospedaje .card')[1];
-console.log(element4);
+formulari.addEventListener('submit', validacio);
 
-console.log('formulari per id')
-element4 = document.querySelector('#formulario');
-console.log(element4);
-
-console.log('primer menu de navegació')
-element4 = document.querySelector('.navegacion');
-console.log(element4);
+function validacio(e) {
+    e.preventDefault();
+} */

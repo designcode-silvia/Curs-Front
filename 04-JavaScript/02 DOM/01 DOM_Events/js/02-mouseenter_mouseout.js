@@ -3,14 +3,17 @@
 var canviEstil = document.getElementsByClassName('navegacion')[0];
 console.log(canviEstil);
 
-canviEstil.addEventListener ("mouseenter", canviFondo);
+canviEstil.addEventListener("mouseenter", canviFondo);
 
 
 function canviFondo() {
-    alert('hola que tal');
+    canviEstil.style.backgroundColor='white';
 } 
 
 
-
 // b) Al sortir del menú de navegació, tornarem a deixar l'estil inicial (backgroundColor=transparent)
+canviEstil.addEventListener("mouseout", canviFondo2);
 
+function canviFondo2() {
+    canviEstil.style.backgroundColor='transparent';
+} 
