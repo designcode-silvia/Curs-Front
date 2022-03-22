@@ -40,6 +40,7 @@ const cardDiv = document.querySelector('.card');
 cardDiv.addEventListener('click', (event) =>{
     let element = event.target.className;
     console.log(event);
+    
     switch (element){
         case 'card':
             console.log('clickCard');
