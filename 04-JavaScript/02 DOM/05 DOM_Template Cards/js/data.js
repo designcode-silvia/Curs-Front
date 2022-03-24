@@ -62,6 +62,20 @@ var products = [
         price: 9.99,
         type: 'clothes',
         img: 'assets/img/shop_09.jpg'
+    },
+    {
+        id: 10,
+        name: 'Toddler Frock',
+        price: 9.99,
+        type: 'clothes',
+        img: 'assets/img/shop_10.jpg'
+    },
+    {
+        id: 11,
+        name: 'Toddler Frock',
+        price: 9.99,
+        type: 'clothes',
+        img: 'assets/img/shop_11.jpg'
     }
 ]
 // Array with products (objects) added directly with push(). Products in this array are repeated.
