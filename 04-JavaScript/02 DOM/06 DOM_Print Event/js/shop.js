@@ -2,7 +2,6 @@
 const templateCard = document.getElementById('template-card').content
 const fragment = document.createDocumentFragment()
 const templateCarrito = document.getElementById('template-carrito').content
-const items = document.getElementById('items')
 
 // DOMContentLoaded - cada vegada que carreguem la pagina es pinten les cards
 document.addEventListener('DOMContentLoaded', () => {
@@ -162,21 +161,42 @@ function removeFromCart(id) {
 }
 
 const pintarCarrito = () =>{
+    const items = document.getElementById('items')
     items.innerHTML = '' 
     
     cart.forEach(element =>{
         templateCarrito.querySelector('th').textContent = element.id
         templateCarrito.querySelectorAll('td')[0].textContent = element.name
         templateCarrito.querySelectorAll('td')[1].textContent = element.price
-        templateCarrito.querySelectorAll('td')[2].textContent = element.type
+        templateCarrito.querySelectorAll('td')[2].textContent = element.quatity
+        templateCarrito.querySelector('span').textContent = element.subtotal
         const clone = templateCarrito.cloneNode(true)
         fragment.appendChild(clone) 
     })
   items.appendChild(fragment)
 }
 
-/* function printCartModal = () =>{
+function printCartModal(){
+    const printCartModal = document.getElementById('itemsModal')
+    /* const ModalListShop = document.getElementById('ModalListShop')
+    ModalListShop.addEventListener('click'); */
+    printCartModal.innerHTML = '' 
     
-} */
+    cart.forEach(itemsModal =>{
+        templateCarrito.querySelector('th').textContent = itemsModal.id
+        templateCarrito.querySelectorAll('td')[0].textContent = itemsModal.name
+        templateCarrito.querySelectorAll('td')[1].textContent = itemsModal.price
+        templateCarrito.querySelectorAll('td')[2].textContent = itemsModal.quatity
+        templateCarrito.querySelector('span').textContent = itemsModal.subtotal
+        const clone = templateCarrito.cloneNode(true)
+        fragment.appendChild(clone) 
+    })
+    printCartModal.appendChild(fragment)
+
+    const footer = document.querySelector('#totalCarrito');
+    footer.textContent = '$' + calculateTotal();
+    /* footer.appendChild(); */
+}
+
 
 
